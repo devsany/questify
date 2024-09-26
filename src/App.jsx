@@ -93,7 +93,7 @@ function App() {
                 <div className="m-5 ">
                   <header>
                     <SignedOut>
-                      <div className="text-black border border-black rounded-xl">
+                      <div className="text-black border border-black rounded-lg">
                         <SignInButton className="p-1 md:pl-3 md:pr-3 md:pt-2 md:pb-2" />
                       </div>
                     </SignedOut>
