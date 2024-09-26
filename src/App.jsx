@@ -98,7 +98,7 @@ function App() {
                       </div>
                     </SignedOut>
                     <SignedIn>
-                      <div className="p-1 border border-3  w-[40px] h-[40px] rounded-full  ">
+                      <div className="p-1  w-[40px] h-[40px]  ">
                         <UserButton />
                       </div>
                     </SignedIn>
