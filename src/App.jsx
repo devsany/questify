@@ -93,12 +93,12 @@ function App() {
                 <div className="m-5 ">
                   <header>
                     <SignedOut>
-                      <div className="text-white">
+                      <div className="text-black border border-black rounded-xl">
                         <SignInButton className="p-1 md:pl-3 md:pr-3 md:pt-2 md:pb-2" />
                       </div>
                     </SignedOut>
                     <SignedIn>
-                      <div className="p-1 border border-3 border-gray-600 w-[40px] h-[40px] rounded-full  ">
+                      <div className="p-1 border border-3  w-[40px] h-[40px] rounded-full  ">
                         <UserButton />
                       </div>
                     </SignedIn>
