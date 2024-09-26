@@ -76,7 +76,7 @@ function App() {
   // const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
     <>
-      <div className="w-[100vw] md:w-[100%] bg-gradient-to-t from-white from-30% to-blue-200 to-70%">
+      <div className="w-[97vw] md:w-[100%] bg-gradient-to-t from-white from-30% to-blue-200 to-70%">
         <nav className=" h-13 md:h-18 shadow md:shadow-sm shadow-blue-65 md:shadow-blue-500/50">
           {/* <NavLink to="/"></NavLink> */}
           <div className="flex bg-white  justify-between">
@@ -204,7 +204,7 @@ function App() {
           </div>
         </div>
         <div>
-          <h2 className="text-center text-blue-700 scroll-m-20 border-b pt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          <h2 className="text-center pb-[30px] pt-[60px] text-blue-700 scroll-m-20 border-b pt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Testimonial
           </h2>
         </div>
@@ -242,7 +242,7 @@ function App() {
           </Carousel>
         </div>
         <div>
-          <h2 className="text-center text-blue-700 scroll-m-20 border-b pt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          <h2 className="text-center pt-[60px] pb-[30px] text-blue-700 scroll-m-20 border-b pt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             What our users says?
           </h2>
 
