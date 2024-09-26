@@ -211,7 +211,7 @@ function App() {
         <div className="flex justify-center text-center text-xl text-blue-800">
           <Carousel
             // plugins={[plugin.current]}
-            className="w-full max-w-xs border border-blue-700 rounded-lg m-3"
+            className="w-full max-w-xs "
             // onMouseEnter={plugin.current.stop}
             // onMouseLeave={plugin.current.reset}
             // className="w-full max-w-xs"
