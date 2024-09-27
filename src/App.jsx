@@ -212,7 +212,8 @@ function App() {
         <div className="flex justify-center text-center text-xl text-blue-800">
           <Carousel
             // plugins={[plugin.current]}
-            className="w-full max-w-xs "
+            // className="w-full max-w"
+            className="w-[300px] md:w-[400px]"
             // onMouseEnter={plugin.current.stop}
             // onMouseLeave={plugin.current.reset}
             // className="w-full max-w-xs"
@@ -290,7 +291,6 @@ function App() {
           </div>
         </div>
         <Accordian />
-        
       </div>
     </>
   );
