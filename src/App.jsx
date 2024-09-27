@@ -290,6 +290,7 @@ function App() {
           </div>
         </div>
         <Accordian />
+        
       </div>
     </>
   );
