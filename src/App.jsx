@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/carousel";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import Accordian from "./compound/Accordian";
 // import Autoplay from "embla-carousel-autoplay";
 
 const testmonial = [
@@ -288,6 +289,7 @@ function App() {
             )}
           </div>
         </div>
+        <Accordian />
       </div>
     </>
   );
