@@ -1,14 +1,11 @@
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { SignedIn, SignIn } from "@clerk/clerk-react";
 import { NavLink } from "react-router-dom";
 
 const NavigationBar = () => {

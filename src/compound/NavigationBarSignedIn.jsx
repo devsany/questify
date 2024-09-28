@@ -10,10 +10,11 @@ import {
 } from "@/components/ui/navigation-menu";
 import { NavLink } from "react-router-dom";
 
-const NavigationBarSignedIn = () => {
+const NavigationBarSignedIn = (props) => {
+  console.log(props);
   return (
     <div>
-      <NavigationMenu className="">
+      <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>Home</NavigationMenuTrigger>
