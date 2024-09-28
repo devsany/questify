@@ -209,7 +209,7 @@ function Home() {
         <div className="flex justify-between p-[5px] md:p-[50px] ">
           <div className="w-[100vw] m-[75px]  md:w-1/2">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-              Transforming Tests into Learning Opportunities.
+              Transforming Tests into Learnin Opportunities.
             </h2>
             <p className="leading-7 [&:not(:first-child)]:mt-6">
               At{" "}
