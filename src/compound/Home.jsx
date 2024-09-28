@@ -42,7 +42,7 @@ import NavigationBarSignedIn from "./NavigationBarSignedIn";
 import NavigationBar1 from "./NavigationBar1";
 import NavigationBarSignedIn1 from "./NavigationBarSignedIn1";
 // import Autoplay from "embla-carousel-autoplay";
-
+import Contact from "./Contact";
 const testmonial = [
   { id: 4, item: "This platform transformed your studying" },
   { id: 2, item: "A must-have for professional development" },
@@ -209,7 +209,7 @@ function Home() {
         <div className="flex justify-between p-[5px] md:p-[50px] ">
           <div className="w-[100vw] m-[75px]  md:w-1/2">
             <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-              Transforming Tests into Learnin Opportunities.
+              Transforming Tests into Learning Opportunities.
             </h2>
             <p className="leading-7 [&:not(:first-child)]:mt-6">
               At{" "}
@@ -395,6 +395,9 @@ function Home() {
           </div>
         </div>
         <Accordian />
+        <div>
+          <Contact />
+        </div>
       </div>
     </>
   );
