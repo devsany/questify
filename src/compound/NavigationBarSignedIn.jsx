@@ -8,10 +8,9 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { SignedIn, SignIn } from "@clerk/clerk-react";
 import { NavLink } from "react-router-dom";
 
-const NavigationBar = () => {
+const NavigationBarSignedIn = () => {
   return (
     <div>
       <NavigationMenu>
@@ -32,20 +31,19 @@ const NavigationBar = () => {
               </NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <SignedIn>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Dashboard</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <NavigationMenuLink className="">
-                  <NavLink to="/dashboard">Dashboard</NavLink>
-                </NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </SignedIn>
+        
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Dashboard</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <NavigationMenuLink className="">
+                <NavLink to="/dashboard">Dashboard</NavLink>
+              </NavigationMenuLink>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>
   );
 };
 
-export default NavigationBar;
+export default NavigationBarSignedIn;

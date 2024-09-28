@@ -5,12 +5,13 @@ import {
   UserButton,
 } from "@clerk/clerk-react";
 import NavigationBar from "./NavigationBar";
+import NavigationBarSignedIn from "./NavigationBarSignedIn";
 
 const AboutUs = () => {
   return (
     <div>
-      <div className="w-[97.5vw] md:w-[100%] bg-gradient-to-t from-white from-30% to-blue-200 to-70%">
-        <nav className=" h-13 md:h-18 shadow md:shadow-sm shadow-blue-65 md:shadow-blue-500/50">
+      <div className="w-[97.5vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-30% to-blue-200 to-70%">
+        <nav className=" h-13 w-[100vw] md:h-18 shadow md:shadow-sm shadow-blue-65 md:shadow-blue-500/50">
           {/* <NavLink to="/"></NavLink> */}
           <div className="flex bg-white  justify-between">
             <div>
@@ -22,7 +23,6 @@ const AboutUs = () => {
             </div>
             <div>
               <header>
-                <div> </div>
                 <div className="m-5 ">
                   <header>
                     <SignedOut>
@@ -38,6 +38,7 @@ const AboutUs = () => {
                     <SignedIn>
                       <div className="p-1  w-[40px] h-[40px]  ">
                         <UserButton />
+                        <NavigationBarSignedIn />
                       </div>
                     </SignedIn>
                   </header>
