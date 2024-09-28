@@ -36,9 +36,13 @@ const AboutUs = () => {
                       </div>
                     </SignedOut>
                     <SignedIn>
-                      <div className="p-1  w-[40px] h-[40px]  ">
-                        <UserButton />
-                        <NavigationBarSignedIn />
+                      <div className="p-1 flex justify-between md:w-[500px] h-[40px]  ">
+                        <div>
+                          <NavigationBarSignedIn />
+                        </div>
+                        <div className="border rounded-3xl">
+                          <UserButton />
+                        </div>
                       </div>
                     </SignedIn>
                   </header>

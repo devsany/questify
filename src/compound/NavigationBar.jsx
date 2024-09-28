@@ -20,7 +20,12 @@ const NavigationBar = () => {
             <NavigationMenuTrigger>Home</NavigationMenuTrigger>
             <NavigationMenuContent>
               <NavigationMenuLink className="">
-                <NavLink to="/">Home</NavLink>
+                <NavLink
+                  to="/"
+                  className="grid w-[180px] gap-3 p-4 md:w-[180px] md:grid-cols-2 lg:w-[180px]"
+                >
+                  Home
+                </NavLink>
               </NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
@@ -28,20 +33,28 @@ const NavigationBar = () => {
             <NavigationMenuTrigger>About US</NavigationMenuTrigger>
             <NavigationMenuContent>
               <NavigationMenuLink className="">
-                <NavLink to="/about">About our Site</NavLink>
+                <NavLink
+                  to="/about"
+                  className="grid w-[180px] gap-3 p-4 md:w-[180px] md:grid-cols-2 lg:w-[180px]"
+                >
+                  About our Site
+                </NavLink>
               </NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <SignedIn>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Dashboard</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <NavigationMenuLink className="">
-                  <NavLink to="/dashboard">Dashboard</NavLink>
-                </NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          </SignedIn>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Documentation</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <NavigationMenuLink className="">
+                <NavLink
+                  to="/documentation"
+                  className="grid w-[180px] gap-3 p-4 md:w-[180px] md:grid-cols-2 lg:w-[180px]"
+                >
+                  Documentation
+                </NavLink>
+              </NavigationMenuLink>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>

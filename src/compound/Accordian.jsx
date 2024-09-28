@@ -131,7 +131,7 @@ const Accordian = () => {
               faqs.map((item, index) => {
                 return (
                   <>
-                    <AccordionItem value={`item-${index + 1}`}>
+                    <AccordionItem value={`item-${index + 1}`} key={index}>
                       <AccordionTrigger>{item.question}</AccordionTrigger>
                       <AccordionContent>
                         <div className="m-3 text-slate-700">{item.answer}</div>

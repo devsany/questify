@@ -2,6 +2,7 @@ import {
   SignedIn,
   SignedOut,
   SignInButton,
+  useAuth,
   UserButton,
 } from "@clerk/clerk-react";
 import { Button } from "@/components/ui/button";
@@ -36,7 +37,7 @@ import { useToast } from "@/hooks/use-toast";
 import Accordian from "./Accordian";
 import NavigationBar from "./NavigationBar";
 // import AboutUs from "./compound/AboutUs";
-import { Route, Routes } from "react-router-dom";
+import { NavLink, Route, Routes } from "react-router-dom";
 import NavigationBarSignedIn from "./NavigationBarSignedIn";
 // import Autoplay from "embla-carousel-autoplay";
 
@@ -77,6 +78,8 @@ function Home() {
   const [num, setNum] = useState(3);
   const [toggle, setToggle] = useState(false);
   const { toast } = useToast();
+
+  const { isSignedIn } = useAuth();
   const handleShowMore = () => {
     toast({
       description: "Appear more",
@@ -105,7 +108,7 @@ function Home() {
             <div>
               <header>
                 <div> </div>
-                <div className="m-5 ">
+                <div className="m-5">
                   <header>
                     <SignedOut>
                       <div className="flex">
@@ -118,46 +121,13 @@ function Home() {
                       </div>
                     </SignedOut>
                     <SignedIn>
-                      <div className="p-1  w-[40px] h-[40px]  ">
-                        <UserButton />
-                        <NavigationBarSignedIn />
-
-                        {/* <NavigationMenu>
-                          <NavigationMenuList>
-                            <NavigationMenuItem>
-                              <NavigationMenuTrigger>
-                                Home
-                              </NavigationMenuTrigger>
-                              <NavigationMenuContent>
-                                <NavigationMenuLink className="">
-                                  <NavLink to="/">Home</NavLink>
-                                </NavigationMenuLink>
-                              </NavigationMenuContent>
-                            </NavigationMenuItem>
-                            <NavigationMenuItem>
-                              <NavigationMenuTrigger>
-                                About US
-                              </NavigationMenuTrigger>
-                              <NavigationMenuContent>
-                                <NavigationMenuLink className="">
-                                  <NavLink to="/about">About our Site</NavLink>
-                                </NavigationMenuLink>
-                              </NavigationMenuContent>
-                            </NavigationMenuItem>
-                            <SignedIn>
-                              <NavigationMenuItem>
-                                <NavigationMenuTrigger>
-                                  Dashboard
-                                </NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                  <NavigationMenuLink className="">
-                                    <NavLink to="/dashboard">Dashboard</NavLink>
-                                  </NavigationMenuLink>
-                                </NavigationMenuContent>
-                              </NavigationMenuItem>
-                            </SignedIn>
-                          </NavigationMenuList>
-                        </NavigationMenu> */}
+                      <div className="p-1 flex justify-between md:w-[500px] h-[40px]  ">
+                        <div>
+                          <NavigationBarSignedIn />
+                        </div>
+                        <div className="border rounded-3xl">
+                          <UserButton />
+                        </div>
                       </div>
                     </SignedIn>
                   </header>
@@ -187,7 +157,14 @@ function Home() {
                 variant="secondary"
                 className="border border-blue-300 shadow-md shadow-blue-200"
               >
-                Get Started{" "}
+                {isSignedIn ? (
+                  <NavLink to="/dashboard">Get Started </NavLink>
+                ) : (
+                  <NavLink to="https://leading-wallaby-6.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A5174%2F">
+                    Get Started{" "}
+                  </NavLink>
+                )}
+
                 <ChevronRight className="ml-1 border-none h-4 w-4" />
               </Button>
             </div>
@@ -309,7 +286,7 @@ function Home() {
             {suggestion.slice(0, num).map((item, index) => {
               return (
                 <>
-                  <div>
+                  <div key={index}>
                     <div className="p-1">
                       <Card>
                         <CardHeader>

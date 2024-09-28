@@ -7,7 +7,7 @@ import {
 import NavigationBar from "./NavigationBar";
 import NavigationBarSignedIn from "./NavigationBarSignedIn";
 
-const Dashboard = () => {
+const Documentation = () => {
   return (
     <div>
       <div className="w-[97.5vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-30% to-blue-200 to-70%">
@@ -56,4 +56,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Documentation;
