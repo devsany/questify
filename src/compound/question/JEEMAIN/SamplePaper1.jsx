@@ -318,12 +318,12 @@ const SamplePaper1 = () => {
             </div>
           </div>
         ) : (
-          <div className="question_field">
+          <div className="question_field ">
             <div className="question_field_content" key={questions.id}>
               <div className="grid grid-cols-2 ">
-                <div className=" m-2 p-4">
-                  <div className="flex justify-end text-center ">
-                    <div className="flex">
+                <div className=" m-2 p-4 bg-white rounded-lg shadow-lg">
+                  <div className="flex  justify-end text-center ">
+                    <div className="flex ">
                       <div className="mr-3">
                         <Drawer>
                           <DrawerTrigger>Finish Text</DrawerTrigger>
@@ -374,7 +374,7 @@ const SamplePaper1 = () => {
                     <h2 className="text-xl">
                       <strong>Q. ({currentQuestion + 1}) </strong>
                     </h2>
-                    <h2 className="text-xl  w-[700px] h-[100px] overflow-x-auto">
+                    <h2 className="text-xl  w-[600px] h-[100px] overflow-x-auto">
                       {questions[currentQuestion].question}
                     </h2>
                   </div>
