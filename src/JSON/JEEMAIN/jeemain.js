@@ -71,10 +71,15 @@ export const jeemain_sample_1 = [
   {
     id: 8,
     question:
-      "A plane electromagnetic wave, has frequency of 2.0 x 10 (^10) Hz and its energy density is 1.02 x 10 (^-8) J/m (^3) in vacuum. The ampliture of the magnetic field of the wave is close to",
+      "Magnetic matetials used for making parmanent magnets (P) and magnets in a transformer (T) have different properties, of the following, which property best matches for the type of magnet required?",
 
-    options: ["190nT", " 160 nT", "180 nT", "150 nT"],
-    answer: "160 nT",
+    options: [
+      "T: Large retentivity, small coercivity",
+      "P: Large retentivity, large coercivity",
+      "T: Small retentivity, large coercivity",
+      "P: Large retentivity, large coercivity",
+    ],
+    answer: "P: Large retentivity, large coercivity",
     userAnswer: "",
   },
 ];
