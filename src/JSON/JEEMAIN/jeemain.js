@@ -82,4 +82,22 @@ export const jeemain_sample_1 = [
     answer: "P: Large retentivity, large coercivity",
     userAnswer: "",
   },
+  {
+    id: 9,
+    question:
+      "Trains A and B are running on parallel tracks in the opposite directions with speeds of 36 km/h and 72 km/h, respectively. A person is walking in train A in the opposite direction to its motion with a speed of 1.8 km/h. Speed (in m/s) of this person as obseved from train B will be close to (Take the distance between the tracks as neglegible)",
+
+    options: ["28.5", "30.5", "29.5", "31.5"],
+    answer: "29.5",
+    userAnswer: "",
+  },
+  {
+    id: 10,
+    question:
+      "Trains A and B are running on parallel tracks in the opposite directions with speeds of 36 km/h and 72 km/h, respectively. A person is walking in train A in the opposite direction to its motion with a speed of 1.8 km/h. Speed (in m/s) of this person as obseved from train B will be close to (Take the distance between the tracks as neglegible)",
+
+    options: ["28.5", "30.5", "29.5", "31.5"],
+    answer: "29.5",
+    userAnswer: "",
+  },
 ];
