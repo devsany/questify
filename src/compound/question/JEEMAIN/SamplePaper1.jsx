@@ -127,6 +127,13 @@ const SamplePaper1 = () => {
   //       clearInterval(time);
   //     };
   //   }, [timer]);
+
+  //   pagination to particular wustion
+
+  const handleClickToGetId = (id, it) => {
+    setCurrentQuestion(id - 1);
+    console.log(it);
+  };
   return (
     <div>
       <div className="w-[100vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-30% to-green-100 to-70%">
@@ -428,6 +435,24 @@ const SamplePaper1 = () => {
                     </div>
                   ) : null}
                 </div>
+              </div>
+              <hr />
+              <div className="">
+                {questions &&
+                  questions.map((item, index) => {
+                    return (
+                      <>
+                        <button
+                          className="m-1"
+                          onClick={() => {
+                            handleClickToGetId(item.id, item);
+                          }}
+                        >
+                          {item.id}
+                        </button>
+                      </>
+                    );
+                  })}
               </div>
             </div>
           </div>
