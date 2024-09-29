@@ -118,7 +118,7 @@ const SamplePaper1 = () => {
                               <NavigationBar />
                             </div>
                             <div className="text-black border border-black rounded-lg">
-                              <SignInButton className="p-1  md:pl-3 md:pr-3 md:pt-2 md:pb-2" />
+                              <SignInButton className="p-1 md:pl-3 md:pr-3 md:pt-2 md:pb-2" />
                             </div>
                           </div>
                         </SignedOut>
@@ -160,7 +160,7 @@ const SamplePaper1 = () => {
                     <div key={index}>
                       {" "}
                       <button
-                        className={`bg-${BackColor} w-[200px] mt-4 mb-4 p-2`}
+                        className={`bg-${BackColor} border w-[200px] mt-4 mb-4 p-2`}
                         onClick={() => {
                           handleClick_and_selected(item.option_id);
                         }}
