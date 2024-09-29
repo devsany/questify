@@ -299,7 +299,7 @@ const SamplePaper1 = () => {
 
         {showScore ? (
           <div className=" grid mt-[90px] justify-center text-center">
-            <div className="w-[400px] p-4  bg-purple-700 shadow-lg text-white rounded-lg">
+            <div className="w-[400px] p-4  bg-purple-600 shadow-lg text-white rounded-lg">
               <div style={{ fontSize: "25px" }}>Your total Score is</div>
               <div style={{ fontSize: "20px", padding: "1rem" }}>
                 {score} {score <= 2 ? "🎆" : "🎇"}
@@ -326,7 +326,9 @@ const SamplePaper1 = () => {
                     <div className="flex ">
                       <div className="mr-3">
                         <Drawer>
-                          <DrawerTrigger>Finish Text</DrawerTrigger>
+                          <DrawerTrigger className="shadow-lg border bg-purple-300">
+                            Finish Text
+                          </DrawerTrigger>
                           <DrawerContent>
                             <DrawerHeader>
                               <DrawerTitle>
@@ -384,7 +386,7 @@ const SamplePaper1 = () => {
                         <>
                           <div className="question_option">
                             <button
-                              className="button-26 m-2 w-[250px] shadow-lg"
+                              className="button-26 m-2 w-[250px] shadow-lg bg-green-300"
                               onClick={() => setAnswer(item)}
                             >
                               {item}
@@ -397,7 +399,7 @@ const SamplePaper1 = () => {
                   <div className=" flex float-end">
                     {currentQuestion === 0 ? null : (
                       <button
-                        className="button-37 mr-3 shadow-lg"
+                        className="button-37 mr-3 shadow-lg bg-fuchsia-200"
                         onClick={() => setCurrentQuestion((p) => p - 1)}
                       >
                         Previous
@@ -405,7 +407,7 @@ const SamplePaper1 = () => {
                     )}
                     {currentQuestion === questions.length - 1 ? (
                       <button
-                        className="button-62 shadow-lg"
+                        className="button-62 shadow-lg bg-orange-300"
                         onClick={() =>
                           handleSubmitTest(questions[currentQuestion].answer)
                         }
@@ -414,7 +416,7 @@ const SamplePaper1 = () => {
                       </button>
                     ) : (
                       <button
-                        className="button-38 shadow-lg"
+                        className="button-38 shadow-lg bg-yellow-200"
                         onClick={() =>
                           handleSubmit(questions[currentQuestion].answer)
                         }
@@ -428,7 +430,7 @@ const SamplePaper1 = () => {
                   {questions[currentQuestion].Image ? (
                     <div className="question_image flex justify-center">
                       <img
-                        className="w-[400px]   m-2 p-4"
+                        className="w-[400px]   m-2 p-4 shadow-xl  border  rounded-lg"
                         src={questions[currentQuestion].Image}
                         alt="question "
                       />
@@ -443,7 +445,7 @@ const SamplePaper1 = () => {
                     return (
                       <>
                         <button
-                          className="m-1 shadow-lg"
+                          className="m-1 shadow-lg bg-slate-300"
                           onClick={() => {
                             handleClickToGetId(item.id, item);
                           }}

@@ -20,13 +20,13 @@ function Contact() {
         className="main_form_field justify-center"
         style={{ display: "flex" }}
       >
-        <div className="md:m-0 ml-10 mt-10">
+        <div className="md:m-0 ml-10 mt-10 border md:pl-4 md:pt-4 rounded-md md:mb-4 shadow-lg">
           <form onSubmit={handleSubmit} style={{ width: "30rem" }}>
             <div className="inputField1 ">
               <label htmlFor="email">Email Address</label>
               <br />
               <input
-                className="w-[250px] md:w-[300px]"
+                className="w-[250px] md:w-[300px] border "
                 style={{ padding: "5px", margin: "5px" }}
                 id="email"
                 type="email"
@@ -47,6 +47,7 @@ function Contact() {
             </label>
             <div className="inputField1">
               <textarea
+                className="border"
                 style={{ padding: "5px", margin: "5px" }}
                 id="message"
                 name="message"
@@ -64,7 +65,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="button-41"
+              className="button-41 shadow-lg"
               disabled={state.submitting}
             >
               Submit
