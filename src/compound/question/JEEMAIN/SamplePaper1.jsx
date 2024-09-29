@@ -443,7 +443,7 @@ const SamplePaper1 = () => {
                     return (
                       <>
                         <button
-                          className="m-1"
+                          className="m-1 shadow-lg"
                           onClick={() => {
                             handleClickToGetId(item.id, item);
                           }}
