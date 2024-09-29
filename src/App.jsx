@@ -37,6 +37,11 @@ const App = () => {
             path="/dashboard/jeemain_sample_paper_2_physics"
             element={<SamplePaper2 />}
           />
+
+<Route
+            path="/dashboard/jeemain_sample_paper_2_physics"
+            element={<SamplePaper2 />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

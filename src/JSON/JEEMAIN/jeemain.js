@@ -297,3 +297,163 @@ export const jeemain_sample_2 = [
     userAnswer: "",
   },
 ];
+
+
+
+
+
+export const jeemain_sample_3_chemistry = [
+  {
+    id: 1,
+    question:
+      "The number of possible optical isomers fro the complexes MA(2)B(2) with sp3 and dsp2 hybridised metal atom, respectively, is  Note: A and B are unidentate neutral and unidentate monoanionic lingands, respectively.",
+    options: ["0 and 0", "0 and 1", "2 and 2", "0 and 2"],
+    answer: "0 and 0",
+    userAnswer: "",
+  },
+  {
+    id: 2,
+    question:
+      "The redox reaction among the following is .",
+    // Image:
+    //   "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_physics_q_2.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX3BoeXNpY3NfcV8yLmpwZWciLCJpYXQiOjE3Mjc1OTY5MDUsImV4cCI6NDMxOTU5NjkwNX0.Fb_L_9tkSGS53HykFxaAWiCVQsEuA_FfFS0wejO11d8&t=2024-09-29T08%3A01%3A45.329Z",
+    options: [
+      "reaction of H2So4 with NaOH",
+      "reaction of [Co(H2O)6]Cl3 with AgNO3",
+      "combination of dinitrogen with dioxygen at 2000k",
+      "formation of ozone from atomospheric oxygen in the presence of sunlight",
+    ],
+    answer: "combination of dinitrogen with dioxygen at 2000k",
+    userAnswer: "",
+  },
+  {
+    id: 3,
+    question:
+      "which of these reactions are possible?",
+       Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_chemistry_q_03.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX2NoZW1pc3RyeV9xXzAzLmpwZWciLCJpYXQiOjE3Mjc2MzI1NTYsImV4cCI6NDMxOTYzMjU1Nn0.X0Rtng8zD5p5I7KZCr9eUvkhvXGdKqF5tlx6SeECcLk&t=2024-09-29T17%3A55%3A55.502Z",
+    options: ["(B) and (D)", "(A) and (D)", "(B), (C) and (D)", "(A) and (B)"],
+    answer: "(A) and (B)",
+    userAnswer: "",
+  },
+  {
+    id: 4,
+    question:
+      "If AB(4) molecule is a polar molecule, a possible geometry of AB(4) is",
+
+    options: ["square pyramidal", "square planer", "rectangular planar", "tetrahedral"],
+    answer: "square pyramidal",
+    userAnswer: "",
+  },
+  {
+    id: 5,
+    question:
+      "Which of the following graphs is not correct for ideal gas?",
+    Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_chemistry_q_05.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX2NoZW1pc3RyeV9xXzA1LmpwZWciLCJpYXQiOjE3Mjc2MzMzNTEsImV4cCI6MTk4NjgzMzM1MX0.P4AR0zrshxKVVnT7E9MLO1CE-hbcQmlUHUpluYtEmog&t=2024-09-29T18%3A09%3A10.573Z",
+    options: ["III", "I", "IV", "II"],
+    answer: "II",
+    userAnswer: "",
+  },
+  {
+    id: 6,
+    question:
+      "The increasing order of the following compounds towards HCN addition is ",
+    Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_chemistry_q_07.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX2NoZW1pc3RyeV9xXzA3LmpwZWciLCJpYXQiOjE3Mjc2MzM2MTEsImV4cCI6MzQ1NTYzMzYxMX0.z8r6v4-30da57F9EgTU7TEBTd0zz94d5XkdOXzPIACs&t=2024-09-29T18%3A13%3A30.173Z",
+    options: ["(i) < (iii) < (iv) < (ii)", "(iii) < (iv) < (i) < (ii)", "(iii) < (iv) < (ii) < (ii)", "(iii) < (i) < (iv) < (ii)"],
+    answer: "(iii) < (i) < (iv) < (ii)",
+    userAnswer: "",
+  },
+  {
+    id: 7,
+    question:
+      "The IUPAC name for the following compound is",
+    Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_chemistry_q_main_7.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX2NoZW1pc3RyeV9xX21haW5fNy5qcGVnIiwiaWF0IjoxNzI3NjMzOTk1LCJleHAiOjM0NTU2MzM5OTV9.DY1A28eCNdN7dKKMy6e_I7pC8DjGUUHTPGqmhsLCSok&t=2024-09-29T18%3A19%3A54.105Z",
+    options: ["6-forml-2-methyl-hex-3-enoic acid", "2,5-diamethyle-6-oxo-hex-3-eonic acid", "2,5-dimethyle-6-carboxy-hex-3-enal", "2,5-dimethly-5-carboxy-hex-3-enal"],
+    answer: "2,5-diamethyle-6-oxo-hex-3-eonic acid",
+    userAnswer: "",
+  },
+  {
+    id: 8,
+    question:
+      "While titrating dilute HCl solution with aqueous NaOH, Which of the following will not be required?",
+
+    options: [
+      "Pipette and distilled water",
+      "Burette and porcelain tile",
+      "Bunsen burner and measuring cylinder",
+      "Clamp and phenolphthalein",
+    ],
+    answer: "Bunsen burner and measuring cylinder",
+    userAnswer: "",
+  },
+  {
+    id: 9,
+    question:
+      "Which of the following is used for the preparation of colloids?",
+
+    options: ["Bredig's Arc method", "Ostwald process", "Mond process", "van Arkel method"],
+    answer: "Bredig's Arc method",
+    userAnswer: "",
+  },
+  {
+    id: 10,
+    question:
+      "Themetal mainly used in devising photoelectric cells is",
+
+    options: ["Na", "Li", "Cs", "Rb"],
+    answer: "Cs",
+    userAnswer: "",
+  },
+  {
+    id: 11,
+    question:
+      "An open beaker of water in equilibrium with water vapour is in a sealed container. When few grams of glucode are added to the beaker of waterm the rate at Which water molecules.",
+    // Image:
+    //   "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_physics_q_11.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX3BoeXNpY3NfcV8xMS5qcGVnIiwiaWF0IjoxNzI3NjAwNjkxLCJleHAiOjI3NjQ3NjAwNjkxfQ.FjJ2RmMIkAwSLdkozejKr17IYwAiBETg69kzg7kxR-4&t=2024-09-29T09%3A04%3A51.526Z",
+    options: ["leaves the solution decreases", "leaves the solution increases", "leaves the vapour decreases", "leaves the vapour decreases"],
+    answer: "leaves the vapour decreases",
+    userAnswer: "",
+  },
+  {
+    id: 12,
+    question:
+      "In general, the property (magnitudes only) that shows an opposite trend in comparinson to other properties across a period is",
+
+    options: ["electronegativity", "electron gain enthalpy", "ionisation enthalpy", "atomic radius"],
+    answer: "atomic radius",
+    userAnswer: "",
+  },
+  {
+    id: 13,
+    question:
+      "For octahedral Mn (II) and tetrahedral Ni (II) complexes, consider the following statements:",
+  Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_chemistry_q_13.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX2NoZW1pc3RyeV9xXzEzLmpwZWciLCJpYXQiOjE3Mjc2MzQ5NzIsImV4cCI6MTc3MTE5ODk0MTcyfQ.qFRanvoCL6OmzEJHqBBaZirb9IW6tCbKqv13tzGIhWc&t=2024-09-29T18%3A36%3A10.981Z",
+    options: ["(I) and (II) only", "(II), (III) and (IV) only", "(I) (II) and (III) only", "(I), (III) and (IV) only"],
+    answer: "(I) (II) and (III) only",
+    userAnswer: "",
+  },
+  {
+    id: 14,
+    question:
+      "Major product of following reaction is.",
+      Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_chemistry_q_14.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX2NoZW1pc3RyeV9xXzE0LmpwZWciLCJpYXQiOjE3Mjc2MzUzMTksImV4cCI6NDMxOTYzNTMxOX0.He49JqSNP3HoIBRKJWx2lqheWwfe6MNxXRkoLyuK3uE&t=2024-09-29T18%3A41%3A58.099Z",
+    options: ["A", "B", "C", "D"],
+    answer: "D",
+    userAnswer: "",
+  },
+  {
+    id: 15,
+    question:
+      "The major aromatic product C in the following reaction sequence will be",
+      Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_chemistry_q_15.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX2NoZW1pc3RyeV9xXzE1LmpwZWciLCJpYXQiOjE3Mjc2MzU0NTUsImV4cCI6Mjc2NDc2MzU0NTV9.-uN8pdILSGhG9UEM9j6zWFAHc2GgOXJaxEp9tgL1NvA&t=2024-09-29T18%3A44%3A14.248Z",
+      options: ["A", "B", "C", "D"],
+    answer: "C",
+    userAnswer: "",
+  },
+];
