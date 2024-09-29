@@ -106,8 +106,26 @@ export const jeemain_sample_1 = [
       "a charged particle (mass m and charge q) moves along X-axis with velocity v. When it passes through the origin it enters a region having uniform electric Field E=-Ej which extend upto x=d. Equation of path of electron in the region 9x>d) is",
     Image:
       "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_physics_q_11.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX3BoeXNpY3NfcV8xMS5qcGVnIiwiaWF0IjoxNzI3NjAwNjkxLCJleHAiOjI3NjQ3NjAwNjkxfQ.FjJ2RmMIkAwSLdkozejKr17IYwAiBETg69kzg7kxR-4&t=2024-09-29T09%3A04%3A51.526Z",
-    options: ["3.2 cm", "2.99 cm", "3.07 cm", "3.21 cm"],
-    answer: "3.07 cm",
+    options: ["y=3x", "2y=4x", "3y=7x", "y=x"],
+    answer: "y=3x",
+    userAnswer: "",
+  },
+  {
+    id: 12,
+    question:
+      "An amplitude modulated wave is represented by the expression V = 5(1 + 0.6 cos6280t)sin(211 x 10(^4)t) Volt. The minimum and maximum amplitudes of the amplitude of the amplitude modulated wave are respectively.",
+
+    options: ["3V, 5V", "2.5V, 5V", "3V, 7V", "8V, 5V"],
+    answer: "2.5V",
+    userAnswer: "",
+  },
+  {
+    id: 13,
+    question:
+      "An amplitude modulated wave is represented by the expression V = 5(1 + 0.6 cos6280t)sin(211 x 10(^4)t) Volt. The minimum and maximum amplitudes of the amplitude of the amplitude modulated wave are respectively.",
+
+    options: ["3V, 5V", "2.5V, 5V", "3V, 7V", "8V, 5V"],
+    answer: "2.5V",
     userAnswer: "",
   },
 ];
