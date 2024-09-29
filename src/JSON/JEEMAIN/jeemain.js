@@ -54,7 +54,7 @@ export const jeemain_sample_1 = [
     question:
       "A uniform cylinder of mass M = 1 and radius R = 2 and a = 3 is to be pulled over a step of height a (a<R) by applying a force F at its centre O perpendicular to the plane through the axes of the cylinder on the edge of the step (see figure). The minimum value of F required is.",
     Image:
-      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/WhatsApp%20Image%202024-09-24%20at%2012.22.49%20PM.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9XaGF0c0FwcCBJbWFnZSAyMDI0LTA5LTI0IGF0IDEyLjIyLjQ5IFBNLmpwZWciLCJpYXQiOjE3Mjc1OTg0MDYsImV4cCI6NDMxOTU5ODQwNn0.D8LDbh-qDld1DDziaLhMggqASBJHIflvVV2fr_B9cFU&t=2024-09-29T08%3A26%3A45.677Z",
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_physics_q_6.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX3BoeXNpY3NfcV82LmpwZWciLCJpYXQiOjE3Mjc2MDA3MzksImV4cCI6NDMxOTYwMDczOX0.LEJnfkx5PM7pOtwEk6qBHDNdnQ44zfYB8Mrn8CH_wzw&t=2024-09-29T09%3A05%3A38.966Z",
     options: ["0.43", "1.27", "2.8", "1.0"],
     answer: "0.43",
     userAnswer: "",
@@ -94,10 +94,20 @@ export const jeemain_sample_1 = [
   {
     id: 10,
     question:
-      "Trains A and B are running on parallel tracks in the opposite directions with speeds of 36 km/h and 72 km/h, respectively. A person is walking in train A in the opposite direction to its motion with a speed of 1.8 km/h. Speed (in m/s) of this person as obseved from train B will be close to (Take the distance between the tracks as neglegible)",
+      "The least count of the main scale of a vernier callipers is 1 mm. Its varnier scale is divided into 10th division and conincide with 9th division of the main scale. when jaws are touching each other, the 6th division of vernier scale conincides with a division of main scale and the zero of vernier scale islying right side of the zero of te vernier scale lies between 3.1 cm and 3.2 cm and 4th VSD conincides with a main (VSD is vernier scale division)",
 
-    options: ["28.5", "30.5", "29.5", "31.5"],
-    answer: "29.5",
+    options: ["3.2 cm", "2.99 cm", "3.07 cm", "3.21 cm"],
+    answer: "3.07 cm",
+    userAnswer: "",
+  },
+  {
+    id: 11,
+    question:
+      "a charged particle (mass m and charge q) moves along X-axis with velocity v. When it passes through the origin it enters a region having uniform electric Field E=-Ej which extend upto x=d. Equation of path of electron in the region 9x>d) is",
+    Image:
+      "https://rsenhagmfwsoacxeaewi.supabase.co/storage/v1/object/sign/photo/jeemain_sample_paper_1_physics_q_11.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwaG90by9qZWVtYWluX3NhbXBsZV9wYXBlcl8xX3BoeXNpY3NfcV8xMS5qcGVnIiwiaWF0IjoxNzI3NjAwNjkxLCJleHAiOjI3NjQ3NjAwNjkxfQ.FjJ2RmMIkAwSLdkozejKr17IYwAiBETg69kzg7kxR-4&t=2024-09-29T09%3A04%3A51.526Z",
+    options: ["3.2 cm", "2.99 cm", "3.07 cm", "3.21 cm"],
+    answer: "3.07 cm",
     userAnswer: "",
   },
 ];
