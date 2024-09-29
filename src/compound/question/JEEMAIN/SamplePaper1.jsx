@@ -291,8 +291,8 @@ const SamplePaper1 = () => {
         </div> */}
 
         {showScore ? (
-          <div className="border grid mt-[90px] justify-center text-center">
-            <div className="w-[400px] p-4 border">
+          <div className=" grid mt-[90px] justify-center text-center">
+            <div className="w-[400px] p-4  bg-purple-700 shadow-lg text-white rounded-lg">
               <div style={{ fontSize: "25px" }}>Your total Score is</div>
               <div style={{ fontSize: "20px", padding: "1rem" }}>
                 {score} {score <= 2 ? "🎆" : "🎇"}
