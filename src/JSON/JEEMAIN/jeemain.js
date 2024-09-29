@@ -129,12 +129,21 @@ export const jeemain_sample_1 = [
     userAnswer: "",
   },
   {
-    id: 13,
+    id: 14,
     question:
-      "",
+      "The mass density of a spherical galaxy varies as K/r over a large distance r from its centre. In that region , a small star is in a circular orbit of radius R. Then the period of revolution T depends on R as.",
 
-    options: ["2 cm", "4 cm", "5 cm", "12 cm"],
-    answer: "4 cm",
+    options: ["T ∝ R", "T^2 ∝ R^3", "T^2 ∝ R", "T^4 ∝ R^3"],
+    answer: "T^2 ∝ R",
+    userAnswer: "",
+  },
+  {
+    id: 15,
+    question:
+      "A cylinderal vessel containing a liquid is rotated about its axis, os that the liquid risesat its sides as shown in the figure. The radius of vessel is 5 cm and the angular speed of rotaion is 2 red/s. The difference in the height h (in cm) of liquid at the centre of vessel and at the side will be.",
+
+    options: ["5", "4", "6", "10"],
+    answer: "5",
     userAnswer: "",
   },
 ];
