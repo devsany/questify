@@ -122,10 +122,19 @@ export const jeemain_sample_1 = [
   {
     id: 13,
     question:
-      "An amplitude modulated wave is represented by the expression V = 5(1 + 0.6 cos6280t)sin(211 x 10(^4)t) Volt. The minimum and maximum amplitudes of the amplitude of the amplitude modulated wave are respectively.",
+      "A beam of protoms with speed 4x10(^5)m/s enters a uniform magneic field of 0.3T at an angle of 60 degree to the magnetic field. The pitch of the resulting helical path of protons is close to ",
 
-    options: ["3V, 5V", "2.5V, 5V", "3V, 7V", "8V, 5V"],
-    answer: "2.5V",
+    options: ["2 cm", "4 cm", "5 cm", "12 cm"],
+    answer: "4 cm",
+    userAnswer: "",
+  },
+  {
+    id: 13,
+    question:
+      "",
+
+    options: ["2 cm", "4 cm", "5 cm", "12 cm"],
+    answer: "4 cm",
     userAnswer: "",
   },
 ];
