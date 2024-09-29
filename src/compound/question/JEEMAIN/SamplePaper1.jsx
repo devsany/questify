@@ -374,7 +374,7 @@ const SamplePaper1 = () => {
                     <h2 className="text-xl">
                       <strong>Q. ({currentQuestion + 1}) </strong>
                     </h2>
-                    <h2 className="text-xl">
+                    <h2 className="text-xl  w-[700px] h-[100px] overflow-x-auto">
                       {questions[currentQuestion].question}
                     </h2>
                   </div>

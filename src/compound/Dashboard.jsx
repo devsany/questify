@@ -130,7 +130,13 @@ const Dashboard = () => {
         <h2 className="text-4xl text-center font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           Jee Main
         </h2>
-        <NavLink to="/dashboard/jeemain_sample_paper_1">Sample Paper 1</NavLink>
+        <div>
+          <NavLink to="/dashboard/jeemain_sample_paper_1">
+            <div className="p-4 hover:text-gray-800 hover:underline ">
+              Sample Paper 1
+            </div>
+          </NavLink>
+        </div>
       </div>
     </div>
   );
