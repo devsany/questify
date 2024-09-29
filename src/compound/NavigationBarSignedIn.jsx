@@ -10,8 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { NavLink } from "react-router-dom";
 
-const NavigationBarSignedIn = (props) => {
-  console.log(props);
+const NavigationBarSignedIn = () => {
   return (
     <div>
       <NavigationMenu>

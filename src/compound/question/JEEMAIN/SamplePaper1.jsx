@@ -4,6 +4,18 @@ import {
   SignInButton,
   UserButton,
 } from "@clerk/clerk-react";
+
+import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import {
   ResizableHandle,
   ResizablePanel,
@@ -13,28 +25,108 @@ import NavigationBar from "../../NavigationBar";
 import NavigationBarSignedIn from "../../NavigationBarSignedIn";
 // import Nav from "./Nav";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavigationBar1 from "../../NavigationBar1";
 import NavigationBarSignedIn1 from "../../NavigationBarSignedIn1";
 import { jeemain_sample_1 } from "../../../JSON/JEEMAIN/jeemain";
 
 const SamplePaper1 = () => {
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [BackColor, setBackColor] = useState(null);
+  //   const [selectedOption, setSelectedOption] = useState(null);
+  //   const [BackColor, setBackColor] = useState(null);
   const [toggle, setToggle] = useState(false);
-  const [question, setQuestion] = useState(jeemain_sample_1);
-  const [initial, setInitial] = useState(0);
+  //   const [question, setQuestion] = useState(jeemain_sample_1);
+  //   const [question1, setQuestion1] = useState(jeemain_sample_1);
+  //   const [initial, setInitial] = useState(0);
+  //   const [userAnswer, setUserAnswer] = useState("");
+  //   const [userAnswerID, setUserAnswerID] = useState("");
+
+  //   componet start answer
+
+  const [questions, setQuestion] = useState(jeemain_sample_1);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [answer, setAnswer] = useState("");
+  const [showScore, setShowScore] = useState(false);
+  const [timer, setTimer] = useState(60);
+  const [finalTimer, setFinalTimer] = useState(0);
+  const [timeLeft, setTimeLeft] = useState({
+    hours: 1,
+    minutes: 30,
+    seconds: 0,
+  });
+
   const handleToggel = () => {
     setToggle(!toggle);
   };
 
-  const handleClick_and_selected = (optionId) => {
-    if (optionId) {
-      setBackColor("orange");
-    } else {
-      setBackColor(null);
+  //   const handleClick_and_selected = (option, optionID) => {
+  //     console.log(option);
+  //     console.log(optionID);
+  //     setUserAnswer(option);
+  //   };
+  //   const handelNext = () => {
+  //     setInitial((p) => p + 1);
+  //     console.log(question);
+  //     setQuestion1((question1.answer = userAnswer));
+  //     console.log(question1);
+  //   };
+
+  //   component start function
+
+  const handleSubmit = (ans) => {
+    if (ans === answer) {
+      setScore(score + 1);
     }
+
+    setCurrentQuestion((p) => p + 1);
   };
+  const handleSubmitTest = (ans) => {
+    if (ans === answer) {
+      setScore(score + 1);
+    }
+    setShowScore(true);
+    setFinalTimer(timer);
+  };
+
+  //   timer useeffect
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        const totalSeconds =
+          prevTime.hours * 3600 + prevTime.minutes * 60 + prevTime.seconds;
+
+        if (totalSeconds <= 0) {
+          clearInterval(timerId);
+          return { hours: 0, minutes: 0, seconds: 0 };
+        }
+        setFinalTimer(totalSeconds);
+        const newTotalSeconds = totalSeconds - 1;
+
+        return {
+          hours: Math.floor(newTotalSeconds / 3600),
+          minutes: Math.floor((newTotalSeconds % 3600) / 60),
+          seconds: newTotalSeconds % 60,
+        };
+      });
+    }, 1000);
+
+    return () => clearInterval(timerId); // Cleanup the timer on unmount
+  }, []);
+  // time use effect end
+  //   useEffect(() => {
+  //     const time = setInterval(() => {
+  //       if (timer > 0) {
+  //         setTimer(timer - 1);
+  //       } else {
+  //         setFinalTimer(timer);
+  //
+  //       }
+  //     }, 1000);
+  //     return () => {
+  //       clearInterval(time);
+  //     };
+  //   }, [timer]);
   return (
     <div>
       <div className="w-[100vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-30% to-green-100 to-70%">
@@ -145,7 +237,7 @@ const SamplePaper1 = () => {
           Back to dashboard
         </NavLink>
 
-        <div className=" grid grid-cols-12 gap-2">
+        {/* <div className=" grid grid-cols-12 gap-2">
           <div className="md:border-l-2 md:col-span-8 m-3 p-4   ">
             <h2 className="text-2xl ">
               <strong> Q. {question[initial].id}</strong>
@@ -162,7 +254,7 @@ const SamplePaper1 = () => {
                       <button
                         className={`bg-${BackColor} border w-[200px] mt-4 mb-4 p-2`}
                         onClick={() => {
-                          handleClick_and_selected(item.option_id);
+                          handleClick_and_selected(item.option, item.option_id);
                         }}
                       >
                         {item.option}
@@ -190,19 +282,156 @@ const SamplePaper1 = () => {
                 {initial == question.length - 1 ? (
                   <button>Submit</button>
                 ) : (
-                  <button
-                    onClick={() => {
-                      setInitial((p) => p + 1);
-                    }}
-                  >
-                    Next
-                  </button>
+                  <button onClick={handelNext}>Next</button>
                 )}
               </div>
             </div>
           </div>
           <div className="md:border-l-2 md:col-span-4 m-3">{}</div>
-        </div>
+        </div> */}
+
+        {showScore ? (
+          <div className="border grid mt-[90px] justify-center text-center">
+            <div className="w-[400px] p-4 border">
+              <div style={{ fontSize: "25px" }}>Your total Score is</div>
+              <div style={{ fontSize: "20px", padding: "1rem" }}>
+                {score} {score <= 2 ? "🎆" : "🎇"}
+              </div>
+              <div style={{ padding: "0rem" }}>
+                {score} correct answers out of {questions.length}
+              </div>
+              <div style={{ marginTop: "7rem", fontSize: "13px" }}>
+                {(score / questions.length) * 100} % -- Congratulations
+              </div>
+              <div style={{ fontSize: "13px" }}>
+                {score <= 2
+                  ? "Work Hard next time do better"
+                  : "You are a spelling champion"}
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="question_field">
+            <div className="question_field_content" key={questions.id}>
+              <div className="grid grid-cols-2 ">
+                <div className=" m-2 p-4">
+                  <div className="flex justify-end text-center ">
+                    <div className="flex">
+                      <div className="mr-3">
+                        <Drawer>
+                          <DrawerTrigger>Finish Text</DrawerTrigger>
+                          <DrawerContent>
+                            <DrawerHeader>
+                              <DrawerTitle>
+                                Are you sure want to submit the test?
+                              </DrawerTitle>
+                              <DrawerDescription>
+                                The Result will be evaluated till the question
+                                you have done
+                              </DrawerDescription>
+                            </DrawerHeader>
+                            <DrawerFooter>
+                              <div className="flex justify-center">
+                                <Button
+                                  onClick={() =>
+                                    handleSubmitTest(
+                                      questions[currentQuestion].answer
+                                    )
+                                  }
+                                >
+                                  Submit
+                                </Button>
+                              </div>
+                              <div className="flex justify-center">
+                                <DrawerClose>
+                                  <Button variant="destructive">Cancel</Button>
+                                </DrawerClose>
+                              </div>
+                            </DrawerFooter>
+                          </DrawerContent>
+                        </Drawer>
+                      </div>
+                      <div className="text-2xl font-mono mt-2 ">
+                        <strong>
+                          {String(timeLeft.hours).padStart(2, "0")}:
+                          {String(timeLeft.minutes).padStart(2, "0")}:
+                          {String(timeLeft.seconds).padStart(2, "0")}
+                        </strong>
+                      </div>
+                      <p className=" text-gray-600 ml-2 mt-[14px]">
+                        <strong>Min</strong>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="field_question ">
+                    <h2 className="text-xl">
+                      <strong>Q. ({currentQuestion + 1}) </strong>
+                    </h2>
+                    <h2 className="text-xl">
+                      {questions[currentQuestion].question}
+                    </h2>
+                  </div>
+                  <div className="grid grid-cols-2 ">
+                    {questions[currentQuestion].options.map((item) => {
+                      return (
+                        <>
+                          <div className="question_option">
+                            <button
+                              className="button-26 m-2 w-[250px] shadow-lg"
+                              onClick={() => setAnswer(item)}
+                            >
+                              {item}
+                            </button>
+                          </div>
+                        </>
+                      );
+                    })}
+                  </div>
+                  <div className=" flex float-end">
+                    {currentQuestion === 0 ? null : (
+                      <button
+                        className="button-37 mr-3 shadow-lg"
+                        onClick={() => setCurrentQuestion((p) => p - 1)}
+                      >
+                        Previous
+                      </button>
+                    )}
+                    {currentQuestion === questions.length - 1 ? (
+                      <button
+                        className="button-62 shadow-lg"
+                        onClick={() =>
+                          handleSubmitTest(questions[currentQuestion].answer)
+                        }
+                      >
+                        Submit
+                      </button>
+                    ) : (
+                      <button
+                        className="button-38 shadow-lg"
+                        onClick={() =>
+                          handleSubmit(questions[currentQuestion].answer)
+                        }
+                      >
+                        Next
+                      </button>
+                    )}
+                  </div>
+                </div>
+                <div>
+                  {questions[currentQuestion].Image ? (
+                    <div className="question_image flex justify-center">
+                      <img
+                        className="w-[400px]   m-2 p-4"
+                        src={questions[currentQuestion].Image}
+                        alt="question "
+                      />
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
