@@ -12,6 +12,7 @@ import { LogInIcon } from "lucide-react";
 import Login from "./compound/Login";
 import SamplePaper1 from "./compound/question/JEEMAIN/SamplePaper1";
 import SamplePaper2 from "./compound/question/JEEMAIN/SamplePaper2";
+import SamplePaperChemistry1 from "./compound/question/JEEMAIN/SamplePaperChemistry1";
 const App = () => {
   const { isSignedIn } = useAuth();
   return (
@@ -38,9 +39,9 @@ const App = () => {
             element={<SamplePaper2 />}
           />
 
-<Route
-            path="/dashboard/jeemain_sample_paper_2_physics"
-            element={<SamplePaper2 />}
+        <Route
+            path="/dashboard/jeemain_sample_paper_1_chemistry"
+            element={<SamplePaperChemistry1 />}
           />
         </Routes>
       </BrowserRouter>

@@ -133,6 +133,7 @@ const Dashboard = () => {
 
         {/* physics */}
         <div>
+          <h2 className="text-xl text-blue-900 text-center">Physics</h2>
           <div>
             <NavLink to="/dashboard/jeemain_sample_paper_1_physics">
               <div className="hover:text-gray-800 hover:underline ">
@@ -144,6 +145,23 @@ const Dashboard = () => {
             <NavLink to="/dashboard/jeemain_sample_paper_2_physics">
               <div className=" hover:text-gray-800 hover:underline ">
                 Sample Paper 2 (Physics) Numarical
+              </div>
+            </NavLink>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-xl text-blue-900 text-center">Chemistry</h2>
+          <div>
+            <NavLink to="/dashboard/jeemain_sample_paper_1_chemistry">
+              <div className="hover:text-gray-800 hover:underline ">
+                Sample Paper 1 (Chemistry)
+              </div>
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/dashboard/jeemain_sample_paper_1_chemistry">
+              <div className=" hover:text-gray-800 hover:underline ">
+                Sample Paper 2 (Chemistry) Numarical
               </div>
             </NavLink>
           </div>
