@@ -10,6 +10,7 @@ import Documentation from "./compound/Documentation";
 import { useAuth } from "@clerk/clerk-react";
 import { LogInIcon } from "lucide-react";
 import Login from "./compound/Login";
+import SamplePaper1 from "./compound/question/JEEMAIN/SamplePaper1";
 const App = () => {
   const { isSignedIn } = useAuth();
   return (
@@ -26,6 +27,11 @@ const App = () => {
           ) : (
             <Route to="/login" element={<Login />} />
           )}
+
+          <Route
+            path="/dashboard/jeemain_sample_paper_1"
+            element={<SamplePaper1 />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

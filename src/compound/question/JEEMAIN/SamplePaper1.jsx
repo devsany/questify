@@ -9,18 +9,31 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
-import NavigationBar from "./NavigationBar";
-import NavigationBarSignedIn from "./NavigationBarSignedIn";
-import Nav from "./Nav";
+import NavigationBar from "../../NavigationBar";
+import NavigationBarSignedIn from "../../NavigationBarSignedIn";
+// import Nav from "./Nav";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import NavigationBar1 from "./NavigationBar1";
-import NavigationBarSignedIn1 from "./NavigationBarSignedIn1";
+import NavigationBar1 from "../../NavigationBar1";
+import NavigationBarSignedIn1 from "../../NavigationBarSignedIn1";
+import { jeemain_sample_1 } from "../../../JSON/JEEMAIN/jeemain";
 
-const Dashboard = () => {
+const SamplePaper1 = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [BackColor, setBackColor] = useState(null);
   const [toggle, setToggle] = useState(false);
+  const [question, setQuestion] = useState(jeemain_sample_1);
+  const [initial, setInitial] = useState(0);
   const handleToggel = () => {
     setToggle(!toggle);
+  };
+
+  const handleClick_and_selected = (optionId) => {
+    if (optionId) {
+      setBackColor("orange");
+    } else {
+      setBackColor(null);
+    }
   };
   return (
     <div>
@@ -127,13 +140,72 @@ const Dashboard = () => {
             </div>
           </div>
         </nav>
-        <h2 className="text-4xl text-center font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Jee Main
-        </h2>
-        <NavLink to="/dashboard/jeemain_sample_paper_1">Sample Paper 1</NavLink>
+
+        <NavLink className="p-4 mt-2" to="/dashboard">
+          Back to dashboard
+        </NavLink>
+
+        <div className=" grid grid-cols-12 gap-2">
+          <div className="md:border-l-2 md:col-span-8 m-3 p-4   ">
+            <h2 className="text-2xl ">
+              <strong> Q. {question[initial].id}</strong>
+            </h2>
+            <h2 className="text-lg font-mono border">
+              {question[initial].question}
+            </h2>
+            <div className="grid grid-cols-2">
+              {question[initial].options.map((item, index) => {
+                return (
+                  <>
+                    <div key={index}>
+                      {" "}
+                      <button
+                        className={`bg-${BackColor} w-[200px] mt-4 mb-4 p-2`}
+                        onClick={() => {
+                          handleClick_and_selected(item.option_id);
+                        }}
+                      >
+                        {item.option}
+                      </button>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+            <div className=" flex justify-end   ">
+              <div className="mr-3">
+                {initial > 0 ? (
+                  <>
+                    <button
+                      onClick={() => {
+                        setInitial((p) => p - 1);
+                      }}
+                    >
+                      Previous
+                    </button>
+                  </>
+                ) : null}
+              </div>
+              <div className=" ">
+                {initial == question.length - 1 ? (
+                  <button>Submit</button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      setInitial((p) => p + 1);
+                    }}
+                  >
+                    Next
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="md:border-l-2 md:col-span-4 m-3">{}</div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default SamplePaper1;
