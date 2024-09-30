@@ -395,6 +395,9 @@ function Home() {
           </div>
         </div>
         <Accordian />
+        <h2 className="text-center pt-[60px] pb-[30px] text-blue-700 scroll-m-20 border-b pt-4 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          Contact Us
+        </h2>
         <div>
           <Contact />
         </div>

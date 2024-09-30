@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 
-function Contact() {
+function Contact(props) {
   const [state, handleSubmit] = useForm("xdknqzko");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
@@ -12,7 +12,7 @@ function Contact() {
     >
       <div className=" mt-10 md:flex md:justify-center md:mt-10 md:mb-10 text-center block">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Contact to Developer
+          {/* {props} */}
         </h2>
       </div>
 
