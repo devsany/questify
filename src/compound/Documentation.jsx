@@ -16,6 +16,8 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import NavigationBar1 from "./NavigationBar1";
 import NavigationBarSignedIn1 from "./NavigationBarSignedIn1";
+import Navbar from "./practics/Nav";
+import Containt from "./practics/Containt";
 
 const Documentation = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,8 +26,8 @@ const Documentation = () => {
   };
   return (
     <div>
-      <div className="w-[100vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-30% to-orange-100 to-70%">
-        <nav className=" h-13 w-[100vw] md:h-18 shadow md:shadow-sm shadow-blue-65 md:shadow-orange-500/50">
+      <div className="w-[100vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-30% to-white-100 to-70%">
+        <nav className="  h-13 w-[100vw] md:h-18 shadow md:shadow-sm shadow-blue-65 md:shadow-orange-500/50">
           {/* <NavLink to="/"></NavLink> */}
           <div className="flex bg-white  justify-between">
             <div>
@@ -127,8 +129,17 @@ const Documentation = () => {
             </div>
           </div>
         </nav>
+        <div className="grid p-5  grid-cols-12">
+          <div className="col-span-2 fixed">
+            {" "}
+            <Navbar />
+          </div>
+          <div className="pl-[200px] col-span-12 ">
+            {" "}
+            <Containt />
+          </div>
+        </div>
       </div>
-      hii
     </div>
   );
 };
