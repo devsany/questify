@@ -29,6 +29,7 @@ import { useEffect, useState } from "react";
 import NavigationBar1 from "../../NavigationBar1";
 import NavigationBarSignedIn1 from "../../NavigationBarSignedIn1";
 import { jeemain_sample_1 } from "../../../JSON/JEEMAIN/jeemain";
+import { RightOutlined } from "@ant-design/icons";
 
 const SamplePaper1 = () => {
   //   const [selectedOption, setSelectedOption] = useState(null);
@@ -421,7 +422,7 @@ const SamplePaper1 = () => {
                           handleSubmit(questions[currentQuestion].answer)
                         }
                       >
-                        Next
+                        Next 
                       </button>
                     )}
                   </div>
