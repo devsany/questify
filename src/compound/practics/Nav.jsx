@@ -14,7 +14,7 @@ const Navbar = () => {
 
     targetElement.scrollIntoView({
       behavior: "smooth",
-      block: "nearest",
+      block: "start",
     });
     // setTimeout(() => {
     //   // Scroll up by 100px after scrolling into view
@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className=" h-[75vh] overflow-y-auto">
       <ul>
         <li className="p-4 text-sm bg-gray-50 m-1 rounded-lg ">
           <a className="text-black" href="#mission" onClick={handleScrollTo}>
@@ -79,7 +79,7 @@ const Navbar = () => {
         </li>
 
         <li className="p-4 text-sm bg-gray-50 m-1 rounded-lg ">
-          <a className="text-black" href="#vision" onClick={handleScrollTo}>
+          <a className="text-black" href="#dashboard" onClick={handleScrollTo}>
             Dashboard Overview
           </a>
         </li>
@@ -91,42 +91,42 @@ const Navbar = () => {
               <li className="pl-4 pr-2 ml-5 pb-2 pt-2 text-sm bg-gray-50 m-1 rounded-lg ">
                 <a
                   className="text-black pl-2"
-                  href="#vision"
+                  href="#test"
                   onClick={handleScrollTo}
                 >
-                  Our Vision
+                  Test Duration Options:
                 </a>
               </li>
               <li className="pl-4 pr-2 ml-5 pb-2 pt-2 text-sm bg-gray-50 m-1 rounded-lg ">
                 <a
                   className="text-black pl-2"
-                  href="#vision"
+                  href="#test1"
                   onClick={handleScrollTo}
                 >
-                  Our Vision
+                  How to Start a Test
                 </a>
               </li>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         <li className="p-4 text-sm bg-gray-50 m-1 rounded-lg ">
-          <a className="text-black" href="#vision" onClick={handleScrollTo}>
-            Scoreboard
+          <a className="text-black" href="#overview" onClick={handleScrollTo}>
+            Application Overview
           </a>
         </li>
         <li className="p-4 text-sm bg-gray-50 m-1 rounded-lg ">
-          <a className="text-black" href="#vision" onClick={handleScrollTo}>
-            Support
+          <a className="text-black" href="#support" onClick={handleScrollTo}>
+            Contact Support
           </a>
         </li>
         <li className="p-4 text-sm bg-gray-50 m-1 rounded-lg ">
-          <a className="text-black" href="#vision" onClick={handleScrollTo}>
+          <a className="text-black" href="#faq" onClick={handleScrollTo}>
             FAQs
           </a>
         </li>
         <li className="p-4 text-sm bg-gray-50 m-1 rounded-lg ">
-          <a className="text-black" href="#vision" onClick={handleScrollTo}>
-            Changelog
+          <a className="text-black" href="#ai" onClick={handleScrollTo}>
+            Al & Chatbot
           </a>
         </li>
       </ul>

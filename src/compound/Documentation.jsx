@@ -26,7 +26,7 @@ const Documentation = () => {
   };
   return (
     <div>
-      <div className="w-[100vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-30% to-white-100 to-70%">
+      <div className="w-[100vw] h-[100vh] md:w-[100%] bg-gradient-to-t from-white from-40% to-yellow-100 to-60%">
         <nav className="  h-13 w-[100vw] md:h-18 shadow md:shadow-sm shadow-blue-65 md:shadow-orange-500/50">
           {/* <NavLink to="/"></NavLink> */}
           <div className="flex bg-white  justify-between">
