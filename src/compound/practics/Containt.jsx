@@ -1,6 +1,6 @@
 const Containt = () => {
   return (
-    <div>
+    <div className="ml-4">
       <section id="mission">
         <h2 className="text-4xl text-center font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           Our Mission
