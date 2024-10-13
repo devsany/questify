@@ -228,11 +228,9 @@ function Home() {
                 className="border border-blue-300 shadow-md shadow-blue-200"
               >
                 {isSignedIn ? (
-                  <NavLink to="/dashboard">Get Started</NavLink>
+                  <NavLink to="/dashboard">Get Started</NavLink>  
                 ) : (
-                  <NavLink to="https://leading-wallaby-6.accounts.dev/sign-in#/?redirect_url=http%3A%2F%2Flocalhost%3A5174%2F">
-                    Get Started
-                  </NavLink>
+                  <NavLink to="">Get Started</NavLink>
                 )}
 
                 <ChevronRight className="ml-1 border-none h-4 w-4" />
